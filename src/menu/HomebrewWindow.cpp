@@ -376,7 +376,7 @@ void HomebrewWindow::OnUpDownClick(GuiButton *button, const GuiController *contr
     {
         homebrewButtons[min].button->setState(STATE_SELECTED);
         selected(controller);
-        previousIndex = 0;
+        previousIndex = min;
         return;
     }
     
