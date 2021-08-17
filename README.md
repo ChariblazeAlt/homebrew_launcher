@@ -1,4 +1,10 @@
-# WiiU Homebrew Launcher
+# WiiU Homebrew Launcher - Mod to show only background
+
+Quick mod to hide all elements of the Launcher except the background.
+
+Created so the background could be made into an animated wallpaper: https://www.reddit.com/r/WiiUHacks/comments/onwr55/does_anyone_have_a_video_of_the_homebrew_launcher/
+
+---
 
 The Homebrew Launcher is a WiiU homebrew that lists homebrew applications located on a SD card and permits launching them (similar to the Homebrew Channel of the Wii).
 
