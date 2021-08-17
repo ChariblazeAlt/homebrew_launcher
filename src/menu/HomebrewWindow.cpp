@@ -38,7 +38,7 @@ HomebrewWindow::HomebrewWindow(int w, int h)
     , arrowLeftImage(arrowLeftImageData)
     , arrowRightButton(arrowRightImage.getWidth(), arrowRightImage.getHeight())
     , arrowLeftButton(arrowLeftImage.getWidth(), arrowLeftImage.getHeight())
-    , hblVersionText("Homebrew Launcher " HBL_VERSION " by Dimok", 32, glm::vec4(1.0f))
+    // , hblVersionText("Homebrew Launcher " HBL_VERSION " by Dimok", 32, glm::vec4(1.0f))
     , touchTrigger(GuiTrigger::CHANNEL_1, GuiTrigger::VPAD_TOUCH)
     , wpadTouchTrigger(GuiTrigger::CHANNEL_2 | GuiTrigger::CHANNEL_3 | GuiTrigger::CHANNEL_4 | GuiTrigger::CHANNEL_5, GuiTrigger::BUTTON_A)
     , buttonLTrigger(GuiTrigger::CHANNEL_ALL, GuiTrigger::BUTTON_L | GuiTrigger::BUTTON_LEFT, true)
@@ -56,7 +56,7 @@ HomebrewWindow::HomebrewWindow(int w, int h)
 
     dirList.SortList();
 
-    for(int i = 0; i < dirList.GetFilecount(); i++)
+    /* for(int i = 0; i < dirList.GetFilecount(); i++)
     {
         //! skip our own application in the listing
         if(strcasecmp(dirList.GetFilename(i), "homebrew_launcher.elf") == 0)
@@ -134,7 +134,7 @@ HomebrewWindow::HomebrewWindow(int w, int h)
         homebrewButtons[idx].button->clicked.connect(this, &HomebrewWindow::OnHomebrewButtonClick);
 
         append(homebrewButtons[idx].button);
-    }
+    } */
 
 
     if((MAX_BUTTONS_ON_PAGE) < homebrewButtons.size())
