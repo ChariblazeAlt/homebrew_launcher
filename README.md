@@ -31,9 +31,6 @@ The apps that will be listed are should be in the following path /wiiu/apps/home
 #### Building the Homebrew Launcher
 To build the main application devkitPPC is required as well as some additionally libraries. If not yet done export the path of devkitPPC and devkitPro to the evironment variables DEVKITPRO and DEVKITPPC.
 
-Some can be found in the "libs" folder of this repository. Extract the "portlibs.zip" into your devkitPro directory. This package includes:  
-- zlib
-
 In order to build this application you need serval libs:
 
 - [dynamic_libs](https://github.com/Maschell/dynamic_libs/tree/lib) for access to the functions.
